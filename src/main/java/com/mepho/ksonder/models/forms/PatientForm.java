@@ -8,7 +8,7 @@ import lombok.*;
 @NoArgsConstructor
 @AllArgsConstructor
 @ToString
-public class PlayerForm {
+public class PatientForm {
 
     @NotNull
     private String firstName;
@@ -17,4 +17,10 @@ public class PlayerForm {
 
     @NotNull
     private String email;
+
+    @NotNull
+    private String bloodType;
+
+    @NotNull
+    private String contactPersonNumber;
 }

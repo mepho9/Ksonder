@@ -1,12 +1,12 @@
 package com.mepho.ksonder.repositories;
 
-import com.mepho.ksonder.models.entities.Player;
+import com.mepho.ksonder.models.entities.Patient;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;
 
-public interface PlayerRepository extends JpaRepository<Player,Long> {
+public interface PatientRepository extends JpaRepository<Patient,Long> {
 
-    Optional<Player> findByEmail(String email);
+    Optional<Patient> findByEmail(String email);
     //Optional<Player> findByTokenResetPassword(String token);
 }
